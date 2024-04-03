@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODU Market Place</title>
+    <link rel="stylesheet" href="styleforitem.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/815903c236.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <i id="userIcon" class="fas fa-user user-icon"></i> User Name
+        <i id="logoutIcon" class="fa-solid fa-right-from-bracket logout-icon"></i>
+    </header>
+    </div><h1 class="listing-heading">Add Item</h1>
+    <form>
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" name="itemName" required>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" required>
+
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+        <div class="btn-case">
+            <button id="AddItemButton" type="button">Add</button>
+        </div>   
+    </form> 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+           document.getElementById("AddItemButton").addEventListener("click", function() {
+           // Navigate to the login page when the button is clicked
+           window.location.href = "listings.html";
+       });
+   });
+   </script> 
+   <script>
+    document.getElementById("userIcon").addEventListener("click", function() {
+        window.location.href = "account.html";
+    });
+    </script>
+    <script>
+        document.getElementById("logoutIcon").addEventListener("click", function() {
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>

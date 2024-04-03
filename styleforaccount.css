@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.user-details {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.user-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #007bff;
+}
+.user-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.user-phone {
+    color: #666;
+}
+.posted-items {
+    margin-top: 30px;
+}
+.posted-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+.item-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.edit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.edit-button:hover {
+    background-color: #0056b3;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: end;
+}
+header i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.btn-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-list button{
+    flex-basis: 8%; 
+    background: #3c00a0;
+    color: #fff;
+    height: 40px; 
+    border-radius: 20px;
+    border: 0; 
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+.user-icon {
+    cursor: pointer;
+}
+
+/* Hover effect for the user icon */
+.user-icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.logout-icon {
+    cursor: pointer;
+}
+
+/* Hover effect for the user icon */
+.logout-icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+header i {
+    font-size: 24px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.fa-right-from-bracket {
+    margin-left: auto; /* Pushes the bracket to the right */
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODU Market Place</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/815903c236.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <i id="userIcon" class="fas fa-user user-icon"></i> User Name
+        <i id="logoutIcon" class="fa-solid fa-right-from-bracket logout-icon"></i>
+    </header>
+    <h1 class="listing-heading">Listings</h1>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="searchButton" type="button">Search</button>
+    </div>
+    <div class="listing-container">
+        <a href="items.html" class="listing-item">
+            <img src="./Images/Bed.jpg" alt="Item 1">
+            <h3>Bed</h3>
+            <p class="price">$90</p>
+        </a>
+        <a href="item2.html" class="listing-item">
+            <img src="./Images/Orgnizer.jpeg" alt="Item 2">
+            <h3>Organiser</h3>
+            <p class="price">$20</p>
+        </a>
+        <a href="item3.html" class="listing-item">
+            <img src="./Images/Microwave.jpg" alt="Item 3">
+            <h3>Microwave</h3>
+            <p class="price">$110</p>
+        </a>
+        <a href="item4.html" class="listing-item">
+            <img src="./Images/ShoeRack.jpeg" alt="Item 4">
+            <h3>ShoeRack</h3>
+            <p class="price">$40</p>
+        </a>
+    </div>
+    <div class="btn-list">
+        <button id="AddItemButton" type="button">Add Item</button>
+    </div>    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+           document.getElementById("AddItemButton").addEventListener("click", function() {
+           // Navigate to the login page when the button is clicked
+           window.location.href = "postitems.html";
+       });
+   });
+   </script>
+   <script>
+    document.getElementById("userIcon").addEventListener("click", function() {
+        window.location.href = "account.html";
+    });
+    </script>
+    <script>
+        document.getElementById("logoutIcon").addEventListener("click", function() {
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>

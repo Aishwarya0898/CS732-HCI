@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODU Market Place</title>
+    <link rel="stylesheet" href="styleforaccount.css">
+    <script src="https://kit.fontawesome.com/815903c236.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <i id="userIcon" class="fas fa-user user-icon"></i> User Name
+        <i id="logoutIcon" class="fa-solid fa-right-from-bracket logout-icon"></i>
+    </header>
+    <div class="container">
+        <!-- User details section -->
+        <div class="user-details">
+            <img src="Images/User.png".jpg" alt="User Photo" class="user-photo">
+            <h3>John</h3>
+            <p>Phone: 123-456-7890</p>
+        </div>
+        
+        <!-- Posted items section -->
+        <div class="posted-items">
+            <h2>Posted Items</h2>
+            <div class="posted-item">
+                <img src="Images/Bed.jpg".jpg" alt="Item 1" class="item-image">
+                <button class="edit-button">Edit</button>
+            </div>
+            <div class="posted-item">
+                <img src="Images/Microwave.jpg".jpg" alt="Item 2" class="item-image">
+                <button class="edit-button">Edit</button>
+            </div>
+            <!-- Add more posted items as needed -->
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="btn-list">
+        <button id="AddItemButton" type="button">Back</button>
+    </div> 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+           document.getElementById("AddItemButton").addEventListener("click", function() {
+           // Navigate to the login page when the button is clicked
+           window.location.href = "listings.html";
+        });
+        document.getElementById("userIcon").addEventListener("click", function() {
+        window.location.href = "account.html";
+        });
+        document.getElementById("logoutIcon").addEventListener("click", function() {
+            window.location.href = "login.html";
+        });
+   });
+   </script>
+</body>
